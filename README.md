@@ -19,7 +19,7 @@ Prêt à vous amuser ?
 
 Point de vue technique :
 
-Le projet est entièrement codé en `Dart`, associé au `Framework Flutter`.
+Le projet est entièrement codé en `Dart`, associé au `Framework Flutter`, via l'IDE `Android Studio`. La partie codé en Dart est accessible ici-même, contrairemnt aux fichiers de configuration générés par Android Studio.
 
 Les mots générés sont extraits de Glawi (http://redac.univ-tlse2.fr/lexiques/glawi.html) via les outils de G-PeTo (Glawi Perl Tools) (http://redac.univ-tlse2.fr/lexiques/glawi/tools/g-peto.html) . Glawi `est un dictionnaire électronique libre du français encodé au format XML. Il s'agit d'une version structurée et normalisée du Wiktionnaire` d'après ses créateurs. D'ailleurs, ses créateurs sont des chercheurs de la Maison de la Recherche, Université Toulouse 2 Jean-Jaurès.
 
