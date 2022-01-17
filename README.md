@@ -1,6 +1,6 @@
 # Cypher
 
-L'un des projets les plus à sortir, au vu du nombre d'années qui ce sont écoulées depuis que j'ai soumi l'idée pour la première fois.
+L'un des projets les plus longs à publier, au vu du nombre d'années qui ce sont écoulées depuis que j'ai soumi l'idée pour la première fois.
 Mais le projet Cypher est enfin sorti ! Après une v1 désastreuse et des années d'abandon, la v2 (et unique version publiée) voit le jour.
 Développée en quelques mois sur mon temps libre,
 cette application mobile reprend le concept d'une série de vidéos à succès commencée en 2017 par : https://www.youtube.com/watch?v=iXuFg3wv1AA . 
