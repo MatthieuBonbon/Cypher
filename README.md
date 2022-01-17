@@ -28,4 +28,4 @@ Les boucles musicales ont été crées par :
  - {inser}
  - {inser}
 
-Projet créé avec le soutien de Rostaminho.
+Projet élaboré avec le soutien de Rostaminho.
