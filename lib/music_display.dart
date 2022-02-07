@@ -72,6 +72,20 @@ class _MusicState extends State<Music> {
     );
   }
 
+  String musicTitleType(int audioNumber){
+    switch (audioNumber){
+      case 0:
+        return "Pop";
+      case 1:
+        return "Rock";
+      case 2:
+        return "R&B";
+      case 3:
+        return "Trap";
+      default:
+        return "Boom Bap";
+    }
+  }
 
   Container musicContainer(int audioNumber){
     return Container(
@@ -90,32 +104,40 @@ class _MusicState extends State<Music> {
           ),
 
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("Audio " + (audioNumber+1).toString(),
-                style: GoogleFonts.kaushanScript(
-                  fontSize: 30,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.left,
-              ),
-              ElevatedButton(
-
-                  style: ElevatedButton.styleFrom(
-                    shadowColor: Color(0x00000000),
-                    primary: Color(0x00000000),
+              Container(
+                margin: EdgeInsets.only(left: 20),
+                child: Text(
+                  musicTitleType(audioNumber),
+                  style: GoogleFonts.kaushanScript(
+                    fontSize: 30,
+                    color: Colors.white,
                   ),
+                  textAlign: TextAlign.left,
+                ),
+              ),
 
-                  onPressed: (){
-                    print("Button play music");
-                    playMusic("audio_"+ (audioNumber+1).toString());
-                  },
+              Container(
+                margin: EdgeInsets.only(right: 10),
+                child: ElevatedButton(
 
-                  child: Icon(
-                    Icons.play_circle_outline,
-                    color:  Colors.white,
-                    size: 50,
-                  )
+                    style: ElevatedButton.styleFrom(
+                      shadowColor: Color(0x00000000),
+                      primary: Color(0x00000000),
+                    ),
+
+                    onPressed: (){
+                      print("Button play music");
+                      playMusic(musicTitleType(audioNumber));
+                    },
+
+                    child: Icon(
+                      Icons.play_circle_outline,
+                      color:  Colors.white,
+                      size: 50,
+                    )
+                ),
               )
             ],
           )

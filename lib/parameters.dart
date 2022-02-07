@@ -66,82 +66,81 @@ class ParameterPageState extends State<ParameterPage>{
               ),
             ),
 
-            Row(
-              children: [
 
-                Container(
-                  width: 58,
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
 
-                ElevatedButton( // button -
-                  style: ElevatedButton.styleFrom(
-                    fixedSize: Size(80,80),
-                    primary: Colors.deepPurple.shade800,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
+                children: [
+
+                  ElevatedButton( // button -
+                    style: ElevatedButton.styleFrom(
+                      fixedSize: Size(80,80),
+                      primary: Colors.deepPurple.shade800,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      side: BorderSide(width: 5.0, color: Colors.white),
                     ),
-                    side: BorderSide(width: 5.0, color: Colors.white),
-                  ),
-                  onPressed: (){
-                    print("Bouton -");
-                    modifyNbPlayer(false);
-                  },
-                  child: Text("-",
-                  style: TextStyle(
-                    fontSize: 60,
-                  ),
-                  ),
-                ),
-
-                Container(
-                  width: 20,
-                ),
-
-                Container( // container nb joueurs
-                  height: 80,
-                  width: 80,
-                  decoration: BoxDecoration(
-                    color: Colors.deepPurple.shade800,
-                    borderRadius: BorderRadius.circular(15),
-                    border: Border.all(
-                      color: Colors.white,
-                      width: 5.0,
-                    )
-                  ),
-                  child: Text(nb_players.toString(),
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 60,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-
-                Container(
-                  width: 20,
-                ),
-
-                ElevatedButton( // button +
-                  style: ElevatedButton.styleFrom(
-                    fixedSize: Size(80,80),
-                    primary: Colors.deepPurple.shade800,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    side: BorderSide(width: 5.0, color: Colors.white),
-                  ),
-                  onPressed: (){
-                    print("Bouton +");
-                    modifyNbPlayer(true);
-                  },
-                  child: Text("+",
+                    onPressed: (){
+                      print("Bouton -");
+                      modifyNbPlayer(false);
+                    },
+                    child: Text("-",
                     style: TextStyle(
                       fontSize: 60,
                     ),
+                    ),
                   ),
-                ),
-              ],
-            ),
+
+                  Container(
+                    width: 20,
+                  ),
+
+                  Container( // container nb joueurs
+                    height: 80,
+                    width: 80,
+                    decoration: BoxDecoration(
+                      color: Colors.deepPurple.shade800,
+                      borderRadius: BorderRadius.circular(15),
+                      border: Border.all(
+                        color: Colors.white,
+                        width: 5.0,
+                      )
+                    ),
+                    child: Text(nb_players.toString(),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 60,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+
+                  Container(
+                    width: 20,
+                  ),
+
+                  ElevatedButton( // button +
+                    style: ElevatedButton.styleFrom(
+                      fixedSize: Size(80,80),
+                      primary: Colors.deepPurple.shade800,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      side: BorderSide(width: 5.0, color: Colors.white),
+                    ),
+                    onPressed: (){
+                      print("Bouton +");
+                      modifyNbPlayer(true);
+                    },
+                    child: Text("+",
+                      style: TextStyle(
+                        fontSize: 60,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
 
             Container(
               height: 120,
@@ -160,7 +159,7 @@ class ParameterPageState extends State<ParameterPage>{
 
             Container( // slider
               //padding: EdgeInsets.only(top: 30),
-              margin: EdgeInsets.only(top: 30),
+              margin: EdgeInsets.only(top: 30, left: 20, right: 20),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20),

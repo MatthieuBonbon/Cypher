@@ -1,8 +1,16 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'parameters.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  LicenseRegistry.addLicense(() async* {
+    final license = await rootBundle.loadString('google_fonts/OFL.txt');
+    yield LicenseEntryWithLineBreaks(['google_fonts'], license);
+  });
   runApp(MyApp());
 }
 class MyApp extends StatelessWidget{
@@ -10,7 +18,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Cypher v2",
+      title: "Cypher",
       home: HomePage()
     );
   }
@@ -102,11 +110,11 @@ class HomePage extends StatelessWidget{
                         textAlign: TextAlign.center,
                       ),
                       content: const Text(
-                          '- Etape 1 : vous choisissez le nombre de joueurs\n'
-                        + '\n- Etape 2 : vous choisssez le nombre de mots par joueur\n'
-                        + '\n- Etape 3 : vous improvisez tous un texte contenant '
+                          'Etape 1 : vous choisissez le nombre de joueurs\n'
+                        + '\nEtape 2 : vous choisssez le nombre de mots par joueur\n'
+                        + '\nEtape 3 : vous improvisez tous un texte contenant '
                         +     'les mots qui vous ont été attribués\n'
-                        + '\n- Etape 4 : vous chantez chacun votre tour vos textes respectifs '
+                        + '\nEtape 4 : vous chantez chacun votre tour vos textes respectifs '
                         +     'par dessus la boucle audio de votre choix\n'
                         + '\nA vos plumes ! 🔥📝',
                         textAlign: TextAlign.center,
@@ -146,8 +154,8 @@ class HomePage extends StatelessWidget{
                   ),
                   content: const Text(
                     'Avec le soutien de Rostaminho \n'
-                    + '\n Boucles audios créées par :\n'
-                        + '{Insérer noms beatmakers}',
+                    + '\n Boucles audios créées par\n'
+                        + 'Eagle Beatz',
                     textAlign: TextAlign.center,
                   ),
                 ),
