@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^2.1.0
+  flutter_launcher_icons: ^0.9.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -35,6 +36,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  image_path: "assets/icon/icon_cypher.png"
+  android: true
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -50,7 +55,7 @@ flutter:
   assets:
     - assets/audios/
     - assets/dictionary/title.txt
-    - assets/dictionary/sample.txt
+    - assets/google_fonts/
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
