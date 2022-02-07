@@ -14,7 +14,7 @@ A la fin de la partie, le vainqueur est désigné par ses compères.
 
 Prêt à vous amuser ?
 
-
+Le jeu est téléchargeable ici : https://gamejolt.com/games/cypher/688986
 
 Point de vue technique :
 
