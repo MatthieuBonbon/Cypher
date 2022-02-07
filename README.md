@@ -1,6 +1,6 @@
 # Cypher
 
-Après des années de réflexion et une première version avortée il y a 4 ans, le projet Cypher voit enfin le jour !
+Après des années de gestation et une première version avortée il y a 4 ans, le projet Cypher voit enfin le jour !
 Développée en quelques mois sur mon temps libre,
 cette application mobile reprend le concept d'une série de vidéos à succès commencée en 2017 par : https://www.youtube.com/watch?v=iXuFg3wv1AA . 
 
